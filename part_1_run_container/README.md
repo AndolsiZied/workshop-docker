@@ -1,6 +1,6 @@
-## Part 1: Run a container
+## Part 1: Run a container [solution](solution)
 ## Exercise 1 : 
-* Run an 'Hello world!'
+* Run an 'Hello world!' 
 
 ## Exercise 2 : 
 * Run in interactive mode an 'Hello world!'
