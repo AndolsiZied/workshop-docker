@@ -1,5 +1,3 @@
-# workshop-docker exercises
-
 ## Part 1: Run a container
 ## Exercise 1 : 
 * Run an 'Hello world!'
