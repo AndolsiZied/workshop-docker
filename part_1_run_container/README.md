@@ -17,4 +17,10 @@
 ## Exercise 6 : 
 * List all of the locally downloaded images
 
-## [solution](solution)
+## Exercise 7 : 
+* Stop, start, restart a container
+
+## Exercise 8 : 
+* Delete a container
+
+## [Solution](solution)

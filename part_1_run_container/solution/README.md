@@ -48,3 +48,25 @@ $ docker images
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 ubuntu              latest              bd3d4369aebc        3 days ago          126.6 MB
 ```
+
+## Exercise 7 : 
+* Stop, start, restart a container
+```sh
+$ docker stop 47abd3caa681
+47abd3caa681
+$ docker start 47abd3caa681
+47abd3caa681
+$ docker restart 47abd3caa681
+47abd3caa681
+```
+
+## Exercise 8 : 
+* Delete a container
+```sh
+$ docker rm 47abd3caa681
+You cannot remove a running container 47abd3caa681b408529cea2cd134353a6bdd3ca6c73a1c0e3da4585b92da4f7e. Stop the container before attempting removal or use -f
+```
+```sh
+$ docker rm -f 47abd3caa681
+47abd3caa681
+```
