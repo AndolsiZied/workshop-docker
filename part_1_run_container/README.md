@@ -1,4 +1,4 @@
-## Part 1: Run a container [solution](solution)
+## Part 1: Run a container
 ## Exercise 1 : 
 * Run an 'Hello world!' 
 
@@ -16,3 +16,5 @@
 
 ## Exercise 6 : 
 * List all of the locally downloaded images
+
+## [solution](solution)
