@@ -11,6 +11,6 @@
 * Make jenkins service depends on sonar service.
 * Make sonar service depends on postgres service.
 * Build services.
-* Check url http://<docker_machine_ip>:18080/
+* Check url http://docker_machine_ip:18080/
 
 ## [Solution](solution)
