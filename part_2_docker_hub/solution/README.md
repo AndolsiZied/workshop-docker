@@ -32,6 +32,9 @@ root@4940162c5a90:/#
 ## Exercise 4 : 
 * Install java 8 in the container
 ```sh
+root@4940162c5a90:/#apt-get install software-properties-common
+root@4940162c5a90:/#add-apt-repository ppa:webupd8team/java -y
+root@4940162c5a90:/#apt-get update
 root@4940162c5a90:/#sudo apt-get install oracle-java8-installer
 ```
 
