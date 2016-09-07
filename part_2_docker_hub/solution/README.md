@@ -38,7 +38,7 @@ root@4940162c5a90:/#sudo apt-get install oracle-java8-installer
 ## Exercise 5 : 
 * Commit a copy of this container to an image using the docker commit command.
 ```sh
-$ docker commit -m "add jva 8" -a "zandolsi" 4940162c5a90 zandolsi/ubuntu:v1
+$ docker commit -m "add java 8" -a "zandolsi" 4940162c5a90 zandolsi/ubuntu:v1
 sha256:b5cb2d256a1087194ab3afc46be702c4ef67719ea2bad329db57d6a30edcff39
 ```
 
