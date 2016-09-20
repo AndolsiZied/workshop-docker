@@ -1,10 +1,10 @@
 #  Prerequisites
-Install Docker
-Linux : natively (package)
-Windows 7 and Windows 8 : https://docs.docker.com/toolbox/toolbox_install_windows/ 
-Windows 10 : https://docs.docker.com/docker-for-windows/
-Mac OS 10.8 : https://docs.docker.com/toolbox/toolbox_install_windows/ 
-Mac OS 10.10.3 or newer :  https://docs.docker.com/docker-for-mac/
+* Install Docker
+* Linux : natively (package)
+* Windows 7 and Windows 8 : https://docs.docker.com/toolbox/toolbox_install_windows/ 
+* Windows 10 : https://docs.docker.com/docker-for-windows/
+* Mac OS 10.8 : https://docs.docker.com/toolbox/toolbox_install_windows/ 
+* Mac OS 10.10.3 or newer :  https://docs.docker.com/docker-for-mac/
 
 #  exercises
 
