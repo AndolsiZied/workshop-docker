@@ -1,5 +1,5 @@
 #  Prerequisites
-* Install Docker
+  Install Docker
 * Linux : natively (package)
 * Windows 7 and Windows 8 : https://docs.docker.com/toolbox/toolbox_install_windows/ 
 * Windows 10 : https://docs.docker.com/docker-for-windows/
