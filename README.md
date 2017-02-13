@@ -12,6 +12,6 @@
 ## Part 2: [Docker Hub](part_2_docker_hub)
 ## Part 3: [Volume](part_3_volume)
 ## Part 4: [Dockerfile](part_4_docker_file)
-## Part 5: [Links](part_5_links
+## Part 5: [Links](part_5_links)
 ## Part 6: [Networks](part_6_networks)
 ## Part 7: [Docker compose](part_7_docker_compose)
