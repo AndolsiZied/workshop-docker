@@ -1,4 +1,4 @@
-## Part 5_1: Network
+## Part 5: Links
 ## Exercise 1 : 
 * Create in detached mode a basic container named server_training
 

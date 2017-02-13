@@ -1,4 +1,4 @@
-## Part 5_2: Network
+## Part 6: Networks
 ## Exercise 1 : 
 * Create a network bridge
 
