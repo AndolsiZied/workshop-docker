@@ -17,7 +17,7 @@ Hello sfeir school!
 ## Exercise 3 : 
 * Write 'Hello sfeir school!' with a container in daemon mode.
 ```sh
-$ docker run -d alpine /bin/sh -c "while true; do echo hello world; sleep 1; done"
+$ docker run -d alpine /bin/sh -c "while true; do echo Hello sfeir school; sleep 1; done"
 47abd3caa681b408529cea2cd134353a6bdd3ca6c73a1c0e3da4585b92da4f7e
 ```
 
