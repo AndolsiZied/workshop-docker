@@ -1,72 +1,76 @@
 ## Part 1: Run a container
 ## Exercise 1 : 
-* Run an 'Hello world!'
+* Write 'Hello sfeir school!' with a container.
 ```sh
-$ docker run ubuntu /bin/echo "Hello world!"
-Hello world!
+$ docker container run alpine /bin/echo 'hello sfeir school!'
+Hello sfeir school!
 ```
 
 ## Exercise 2 : 
-* Run in interactive mode an 'Hello world!'
+* Write 'Hello sfeir school!' with a container in interactive mode.
 ```sh
-$ docker run -it ubuntu /bin/bash
-root@a0b7e641636e:/# echo "Hello world!"
-Hello world!
+$ docker container run -it alpine /bin/sh
+root@a0b7e641636e:/# echo 'hello sfeir school!'
+Hello sfeir school!
 ```
 
 ## Exercise 3 : 
-* Run in daemon mode an 'Hello world!'
+* Write 'Hello sfeir school!' with a container in daemon mode.
 ```sh
-$ docker run -d ubuntu /bin/sh -c "while true; do echo hello world; sleep 1; done"
+$ docker run -d alpine /bin/sh -c "while true; do echo hello world; sleep 1; done"
 47abd3caa681b408529cea2cd134353a6bdd3ca6c73a1c0e3da4585b92da4f7e
 ```
 
 ## Exercise 4 : 
-* List locally running containers on the system
+* Fetch the logs of the last created container.
 ```sh
-$ docker ps
-CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
-47abd3caa681        ubuntu              "/bin/sh -c 'while tr"   8 seconds ago       Up 6 seconds                            compassionate_brattain
+$ docker container logs 47a
+Hello sfeir school
+Hello sfeir school
+Hello sfeir school
+Hello sfeir school
 ```
 
 ## Exercise 5 : 
-* List all of the locally containers
+* List locally running containers on the system
 ```sh
-$ docker ps -a
-CONTAINER ID        IMAGE               COMMAND                  CREATED              STATUS                      PORTS               NAMES
-47abd3caa681        ubuntu              "/bin/sh -c 'while tr"   About a minute ago   Up About a minute                               compassionate_brattain
-863eaf1e0b03        ubuntu              "/bin/sh -c 'while tr"   2 minutes ago        Exited (2) 2 minutes ago                        backstabbing_cori
-a0b7e641636e        ubuntu              "/bin/bash"              5 minutes ago        Exited (0) 3 minutes ago                        sharp_goldberg
-ab84bf962872        ubuntu              "/bin/bash"              5 minutes ago        Exited (0) 5 minutes ago                        cranky_knuth
-5f9914d06c85        ubuntu              "/bin/echo 'Hello wor"   7 minutes ago        Exited (0) 7 minutes ago                        pedantic_tesla
+$ docker container ls
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS               NAMES
+45560296ab44        alpine              "/bin/sh -c 'while..."   7 minutes ago       Up 7 minutes                            cranky_wright
 ```
 
 ## Exercise 6 : 
-* List all of the locally downloaded images
+* List all of the locally containers
 ```sh
-$ docker images
-REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
-ubuntu              latest              bd3d4369aebc        3 days ago          126.6 MB
+$ docker container ls -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                      PORTS               NAMES
+45560296ab44        alpine              "/bin/sh -c 'while..."   8 minutes ago       Up 8 minutes                                    cranky_wright
+86bd9fe99a07        alpine              "/bin/sh"                10 minutes ago      Exited (0) 8 minutes ago                        ecstatic_fermi
+1961106587e9        alpine              "/bin/echo 'hello ..."   11 minutes ago      Exited (0) 11 minutes ago                       mystifying_darwin
+9f189df65770        alpine              "/bin/echo 'hello ..."   11 minutes ago      Exited (0) 11 minutes ago                       stupefied_minsky
+1f208cb57eae        alpine              "/bin/echo 'hello ..."   13 minutes ago      Exited (0) 13 minutes ago                       dazzling_hugle
+8fca4ce4ccca        alpine              "/bin/echo hello"        13 minutes ago      Exited (0) 13 minutes ago                       nostalgic_poincare
 ```
+
 
 ## Exercise 7 : 
 * Stop, start, restart a container
 ```sh
-$ docker stop 47abd3caa681
+$ docker container stop 47abd3caa681
 47abd3caa681
-$ docker start 47abd3caa681
+$ docker container start 47abd3caa681
 47abd3caa681
-$ docker restart 47abd3caa681
+$ docker container restart 47abd3caa681
 47abd3caa681
 ```
 
 ## Exercise 8 : 
 * Delete a container
 ```sh
-$ docker rm 47abd3caa681
+$ docker container rm 47abd3caa681
 You cannot remove a running container 47abd3caa681b408529cea2cd134353a6bdd3ca6c73a1c0e3da4585b92da4f7e. Stop the container before attempting removal or use -f
 ```
 ```sh
-$ docker rm -f 47abd3caa681
+$ docker container rm -f 47abd3caa681
 47abd3caa681
 ```

@@ -1,56 +1,56 @@
 ## Part 2: Docker Hub
 ## Exercise 1 : 
-* Search for docker ubuntu image
+* Search for docker alpine image
 ```sh
-$ docker search ubuntu
-NAME                       DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
-ubuntu                     Ubuntu is a Debian-based Linux operating s...   4595      [OK]
+$ docker search alpine
+NAME                                           DESCRIPTION                                     STARS     OFFICIAL   AUTOMATED
+alpine                                         A minimal Docker image based on Alpine Lin...   1892      [OK]       
 ```
 
 ## Exercise 2 : 
-* Download ubuntu image with version 14.04
+* Download alpine image with version 3.3
 ```sh
-$ docker pull ubuntu:14.04
-14.04: Pulling from library/ubuntu
-
-862a3e9af0ae: Pull complete
-6498e51874bf: Pull complete
-159ebdd1959b: Pull complete
-0fdbedd3771a: Pull complete
-7a1f7116d1e3: Pull complete
-Digest: sha256:5b5d48912298181c3c80086e7d3982029b288678fccabf2265899199c24d7f89
-Status: Downloaded newer image for ubuntu:14.04
+$ docker image pull alpine 3.3
+3.3: Pulling from library/alpine
+5a026b6c4964: Pull complete 
+Digest: sha256:925991fda395a81dd67f22f7d740c117fbff1bcca8ce3d4b40697263b5a11557
+Status: Downloaded newer image for alpine:3.3
 ```
 
 ## Exercise 3 : 
-* Run in interactive mode a container with ubuntu:14.04 iamge
+* Run in interactive mode a container with alpine:3.3 image and named alpine-node
 ```sh
-$ docker run -it ubuntu:14.04
+$ docker run -it --name alpine-node alpine:3.3 /bin/sh
 root@4940162c5a90:/#
 ```
 
 ## Exercise 4 : 
-* Install java 8 in the container
+* Install node in the container
 ```sh
-root@4940162c5a90:/#apt-get install software-properties-common
-root@4940162c5a90:/#add-apt-repository ppa:webupd8team/java -y
-root@4940162c5a90:/#apt-get update
-root@4940162c5a90:/#sudo apt-get install oracle-java8-installer
+/ # apk add --update nodejs
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.3/main/x86_64/APKINDEX.tar.gz
+fetch http://dl-cdn.alpinelinux.org/alpine/v3.3/community/x86_64/APKINDEX.tar.gz
+(1/4) Installing libgcc (5.3.0-r0)
+(2/4) Installing libstdc++ (5.3.0-r0)
+(3/4) Installing libuv (1.7.5-r0)
+(4/4) Installing nodejs (4.3.0-r0)
+Executing busybox-1.24.2-r0.trigger
+OK: 29 MiB in 15 packages
 ```
 
 ## Exercise 5 : 
 * Commit a copy of this container to an image using the docker commit command.
 ```sh
-$ docker commit -m "add java 8" -a "zandolsi" 4940162c5a90 zandolsi/ubuntu:v1
+$ docker container commit -m "add node" -a "zandolsi" alpine-node zandolsi/alpine-node:v1
 sha256:b5cb2d256a1087194ab3afc46be702c4ef67719ea2bad329db57d6a30edcff39
 ```
 
 ## Exercise 6 : 
 * Check the list of the locally downloaded images
 ```sh
-$ docker images
+$ docker image ls
 REPOSITORY             TAG                 IMAGE ID            CREATED             SIZE
-zandolsi/ubuntu        v1                  b5cb2d256a10        12 seconds ago      188 MB
+zandolsi/alpine-node   v1                  b16eb272eb46        13 seconds ago      24.6 MB
 ```
 
 ## Exercise 7 : 
@@ -62,16 +62,12 @@ Password:
 Login Succeeded
 
 zandolsi@SCZC42800DD MINGW64 ~
-$ docker push zandolsi/ubuntu
-The push refers to a repository [docker.io/zandolsi/ubuntu]
-fe01266ca124: Pushed
-ffb6ddc7582a: Mounted from library/ubuntu
-344f56a35ff9: Mounted from library/ubuntu
-530d731d21e1: Mounted from library/ubuntu
-24fe29584c04: Mounted from library/ubuntu
-102fca64f924: Mounted from library/ubuntu
-v1: digest: sha256:f50a80e997e11895c9b6e546699145e695dad22cf8880426112db980683bb227 size: 1566
+$ docker image push zandolsi/alpine
+The push refers to a repository [docker.io/zandolsi/alpine-node]
+ccdf41fb5479: Pushed 
+fcad8ad5a40f: Mounted from library/alpine 
+v1: digest: sha256:1f6a021e4b64d4d9eee87094ebb1ce9ca02e5bb017d2281ecdf3f456103e7c14 size: 739
 ```
 
 ## Exercise 8 : 
-* Check your Git Hub repository
+* Check your Docker Hub repository

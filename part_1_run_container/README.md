@@ -1,26 +1,23 @@
 ## Part 1: Run a container
 ## Exercise 1 : 
-* Run an 'Hello world!' 
+* Write 'Hello sfeir school!' with a container.
 
 ## Exercise 2 : 
-* Run in interactive mode an 'Hello world!'
+* Write 'Hello sfeir school!' with a container in interactive mode.
 
 ## Exercise 3 : 
-* Run in daemon mode an 'Hello world!'
+* Write 'Hello sfeir school!' with a container in daemon mode.
 
 ## Exercise 4 : 
-* List locally running containers on the system
+* List locally running containers on the system.
 
 ## Exercise 5 : 
-* List all of the locally containers
+* List all of the locally containers.
 
 ## Exercise 6 : 
-* List all of the locally downloaded images
+* Stop, start, restart a container.
 
 ## Exercise 7 : 
-* Stop, start, restart a container
-
-## Exercise 8 : 
-* Delete a container
+* SDelete all containers.
 
 ## [Solution](solution)
