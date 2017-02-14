@@ -1,0 +1,8 @@
+dc_server:
+ image: alpine:3.3
+ command: /bin/sh -c 'while true; do sleep 5; date +"%H:%M:%S"; done'
+dc_client:
+ image: alpine:3.3
+ links:
+  - dc_server
+ command: ping dc_server
