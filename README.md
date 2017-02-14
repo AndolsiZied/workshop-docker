@@ -14,4 +14,5 @@
 ## Part 4: [Dockerfile](part_4_docker_file)
 ## Part 5: [Links](part_5_links)
 ## Part 6: [Networks](part_6_networks)
-## Part 7: [Docker compose](part_7_docker_compose)
+## Part 7_1: [Docker compose v1](part_7_1_docker_compose)
+## Part 7_2: [Docker compose v2](part_7_2_docker_compose)
