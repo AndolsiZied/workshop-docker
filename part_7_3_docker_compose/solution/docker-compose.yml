@@ -1,0 +1,16 @@
+version : '2'
+services :
+  web:
+    build: .
+    ports:
+      - "19000:9000"
+    depends_on:
+      - mongo-prod
+  mongo-prod:
+    image: mongo:3.2.10
+    ports:
+      - "27017:27017"
+    volumes:
+      - data:/data/db
+volumes:
+  data:
