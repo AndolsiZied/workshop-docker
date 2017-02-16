@@ -17,4 +17,4 @@
 ## Part 7_1: [Docker compose v1](part_7_1_docker_compose)
 ## Part 7_2: [Docker compose v2](part_7_2_docker_compose)
 ## Part 7_3: [Docker compose v2](part_7_3_docker_compose)
-## Part 7_4: [Docker compose v2](part_7_4_docker_compose)
+## Part 7_4: [Docker compose v3](part_7_4_docker_compose)
