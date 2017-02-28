@@ -14,5 +14,3 @@ $ docker stack deploy --compose-file=docker-compose.yml stack-training
 ```sh
 $ docker run -it --rm -p 8282:8080 -v /var/run/docker.sock:/var/run/docker.sock
 ```
-
-## [Solution](solution)
