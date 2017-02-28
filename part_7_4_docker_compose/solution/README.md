@@ -12,5 +12,5 @@ $ docker stack deploy --compose-file=docker-compose.yml stack-training
 ## Exercise 3 : 
 * Run docker-swarm-gui container.
 ```sh
-$ docker run -it --rm -p 8282:8080 -v /var/run/docker.sock:/var/run/docker.sock
+$ docker run -it --rm -p 8282:8080 -v /var/run/docker.sock:/var/run/docker.sock julienbreux/docker-swarm-gui:latest
 ```
